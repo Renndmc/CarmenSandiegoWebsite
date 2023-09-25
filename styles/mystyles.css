@@ -1,28 +1,30 @@
-body{
-    margin: 0;
+* {
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+img {
+    vertical-align: middle;
+    height: 100vh;
+    width: 100%;
 }
 
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Amatic SC", sans-serif;
     color: white;
-    margin-top: 0;
 }
 
-.container {
-    padding-left: 1em;
-    padding-top: 1em;
-}
-
-.bg {
+.container{
     position: relative;
-    height: 100vh;
 }
 
-.bg::before {
-    background: url(../pics/carmen-sandiego-s-great-chase-through-time_1.webp) center / cover;
-    content: "";
+.content {
+    padding-left: .5em;
+    opacity: .8;
+}
+
+.container .content{
     position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
-    z-index: -1;
-    opacity: .5;
+    bottom: 0;  /* position it at the bottom of page */
+    background: rgb(0, 0, 0);
+    width: 100%;
 }
