@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Amatic SC", sans-serif;
+    color: white;
+    margin-top: 0;
+}
+
+.container {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.bg {
+    position: relative;
+    height: 100vh;
+}
+
+.bg::before {
+    background: url(../pics/carmen-sandiego-s-great-chase-through-time_1.webp) center / cover;
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: -1;
+    opacity: .5;
+}
